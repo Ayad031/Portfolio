@@ -1,0 +1,26 @@
+
+composer require webapp
+composer require annotations
+composer require symfony/webpack-encore-bundle
+composer require symfony/orm-pack
+composer require symfony/maker-bundle --dev
+composer require symfony/form
+composer require symfony/security-bundle
+
+
+BDD -> 
+php bin/console doctrine:database:create
+php bin/console make:user
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+
+
+
+Form -> 
+php bin/console make:registration-form
+php bin/console make:Auth
+
+
+composer require symfonycasts/reset-password-bundle
+
+
